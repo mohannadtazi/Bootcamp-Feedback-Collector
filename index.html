@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootcamp Feedback Collector</title>
+  <style>
+    /* Resetting styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #333;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+    
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #00695c;
+      color: #fff;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    header p {
+      font-size: 1.1rem;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    
+    section {
+      background: #fff;
+      border-radius: 4px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #00695c;
+    }
+    
+    section p, section ul {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    
+    section ul {
+      padding-left: 1.5rem;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: #00695c;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Bootcamp Feedback Collector</h1>
+    <p>Gathering invaluable insights from our bootcamp students</p>
+  </header>
+  
+  <div class="container">
+    <!-- About the Tool -->
+    <section id="overview">
+      <h2>About the Tool</h2>
+      <p>
+        The Bootcamp Feedback Collector is an automated agent designed to reach out to students after their bootcamp experience to gather valuable feedback. It helps us learn what went well and what could be improved.
+      </p>
+      <p>The tool classifies responses into four main categories:</p>
+      <ul>
+        <li><strong>Positive Feedback:</strong> Students share what they enjoyed.</li>
+        <li><strong>Negative Feedback:</strong> Students express what didn't work or what could be improved.</li>
+        <li><strong>Inquiries:</strong> Students ask questions about the bootcamp experience.</li>
+        <li><strong>None:</strong> Off-topic or unclear responses.</li>
+      </ul>
+    </section>
+    
+    <!-- How It Works -->
+    <section id="workflow">
+      <h2>How It Works</h2>
+      <p>
+        The agent starts by asking students about their overall bootcamp experience. Based on their response, an intent classifier categorizes the feedback and the agent follows up accordingly:
+      </p>
+      <ul>
+        <li><strong>Positive Feedback:</strong> Follow-up questions request specific details about what was enjoyed.</li>
+        <li><strong>Negative Feedback:</strong> The agent asks for more details on challenges encountered.</li>
+        <li><strong>Inquiries:</strong> Provides direct responses using a dedicated knowledge base.</li>
+        <li><strong>None:</strong> Guides the student back on track with clarifying questions.</li>
+      </ul>
+    </section>
+    
+    <!-- Integration & Customization -->
+    <section id="integration">
+      <h2>Integration & Customization</h2>
+      <p>
+        Easily integrate this tool into your existing system. You can tailor the conversational prompts, adjust the intent classification logic, and even integrate with phone or chat platforms for real-time feedback collection.
+      </p>
+      <p>
+        For more information on how the tool works or to customize the experience for your needs, please refer to the documentation provided in the repository.
+      </p>
+    </section>
+    
+    <!-- Chat Widget Information -->
+    <section id="chat">
+      <h2>Chat Support</h2>
+      <p>
+        Need help while using the feedback collector or have any questions? Use the chat widget located at the bottom-right corner. Our interactive chat assistant is always available to guide you or provide extra details.
+      </p>
+    </section>
+  </div>
+  
+  <!-- Voiceflow Chat Widget Integration -->
+  <script type="text/javascript">
+    (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67f5ac99ddeee1e64e380f3a' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bootcamp Feedback Collector. All rights reserved.</p>
+  </footer>
+</body>
+</html>
