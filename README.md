@@ -2,6 +2,8 @@
 
 The **Bootcamp Feedback Collector** is an automated agent designed to reach out to bootcamp students after their program and gather structured feedback via phone or chat. It uses a simple intent classifier to determine if the student's response falls into one of four categories: positive feedback, negative (bad) feedback, inquiries, or none (no match). The agent then follows up accordingly with stage-specific prompts.
 
+![voiceflow-export-1744164824366](https://github.com/user-attachments/assets/eb5a46fb-c05e-42eb-b7cf-719b18fd898f)
+
 ## Features
 
 - **Conversational Agent:**  
